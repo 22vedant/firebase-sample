@@ -1,18 +1,26 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "esModuleInterop": true,
-    "moduleResolution": "nodenext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "lib",
+    "rootDir": "src",
+    "sourceMap": true,
+    "target": "es2017",
+    "lib": [
+      "ES2017"
+    ],
+    "allowJs": true,
+    "strict": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "outDir": "lib",
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2017",
-    "allowJs": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ]
   },
-  "compileOnSave": true,
   "include": [
     "src"
-  ]
+  ],
+  "compileOnSave": true
 }

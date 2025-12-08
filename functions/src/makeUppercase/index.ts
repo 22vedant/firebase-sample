@@ -19,3 +19,5 @@ export const makeUppercase = onDocumentCreated(
         return event.data?.ref.set({ uppercase }, { merge: true });
     }
 );
+
+export default makeUppercase

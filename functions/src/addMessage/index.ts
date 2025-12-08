@@ -34,6 +34,8 @@ export const addMessage = onCall((req) => {
 
 })
 
+export default addMessage
+
 // HTTP Function
 // export const addMessage = onRequest(async (req, res) => {
 //     const original = req.query.text;

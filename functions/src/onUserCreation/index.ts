@@ -4,8 +4,9 @@ import { logger } from "firebase-functions/logger"
 
 const db = getFirestore()
 
-export const onUserCreation = auth.user().onCreate(async (event) => {
-    const user = event.providerData
+// export const userCreationTrigger = functions.runWith()
+export const onUserCreation = auth.user().onCreate(async (user) => {
+    // const user = event.providerData
     const userDoc = {
         uid: user.uid,
         email: user.email ?? null,
@@ -18,3 +19,5 @@ export const onUserCreation = auth.user().onCreate(async (event) => {
 
     logger.info(`Created Firestore record for user: ${user.uid}`);
 })
+
+export default onUserCreation
