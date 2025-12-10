@@ -15,3 +15,5 @@ export const addNumbers = onCall((req) => {
         operationResult: firstNumber + secondNumber
     }
 })
+
+export default addNumbers
